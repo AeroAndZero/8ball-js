@@ -46,9 +46,9 @@ let lineRenderer = false;
 function setup(){
 	createCanvas(1280, 720);
 	frameRate(60);
-	let ball = new Ball(Math.floor(Math.random() * 800) + 200,Math.floor(Math.random() * 400) + 100,0,6);
+	let ball = new Ball(Math.floor(Math.random() * 800) + 200,Math.floor(Math.random() * 400) + 100,0,6); //Cue ball has the weight of 6 oz
 	for(let i = 1; i <= 5;i++){
-		ball = new Ball(Math.floor(Math.random() * 800) + 200,Math.floor(Math.random() * 400) + 100,i,5.5);
+		ball = new Ball(Math.floor(Math.random() * 800) + 200,Math.floor(Math.random() * 400) + 100,i,5.5); // Other balls have the weight of 5.5 oz
 	}
 
 	cueBall = balls[0];
