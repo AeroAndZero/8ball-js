@@ -39,7 +39,7 @@ let startingClickPoint = new Vector(0,0);
 let cueLength = 170;
 let cueBall,mcOffset,normalFactor,mcOffsetNormal;
 let forceAmplifier = 0.2;
-let friction = 0.02;
+let friction = 0.04;
 let lockedVector = new Vector(0,0);
 let lineRenderer = false;
 
