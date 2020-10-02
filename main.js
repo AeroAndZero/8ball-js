@@ -106,10 +106,12 @@ function draw(){
 		//Checking collisions
 			//Bouncing off the wall
 		if(balls[i].position.x - ballRadius <= 0 || balls[i].position.x + ballRadius >= poolWidth){
+			balls[i].position.x -= balls[i].velocity.normalize().x * 2;
 			balls[i].velocity.x *= -1;
 		}
 
 		if(balls[i].position.y - ballRadius <= 0 || balls[i].position.y + ballRadius >= poolHeight){
+			balls[i].position.y -= balls[i].velocity.normalize().y * 2;
 			balls[i].velocity.y *= -1;
 		}
 
